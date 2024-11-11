@@ -1,37 +1,73 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
 
-.peta {
-    width: 80%;
-    max-width: 600px;
-}
+        .peta {
+            width: 80%;
+            max-width: 600px;
+        }
 
-#details {
-    text-align: center;
-    margin-top: 20px;
-}
+        #details {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            width: 80%;
+            max-width: 600px;
+        }
 
-#play-sound, #stop-sound {
-    margin-top: 10px;
-}
+        #play-sound, #stop-sound {
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
 
-.selected-region {
-    fill: #FFD700; /* Mengubah warna saat provinsi diklik */
-}
+        #play-sound:hover, #stop-sound:hover {
+            background-color: #45a049;
+        }
+
+        .selected-region {
+            fill: #FFD700; /* Mengubah warna saat provinsi diklik */
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            header {
+                font-size: 1.5em;
+            }
+
+            #details {
+                width: 90%;
+            }
+
+            .peta {
+                width: 100%;
+            }
+        }
