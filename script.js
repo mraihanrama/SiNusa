@@ -81,62 +81,53 @@
             // Tambahkan data untuk provinsi lain sesuai ID-nya
         };
 
-        // Event listener saat peta SVG di-load
-document.getElementById("indonesia-map").addEventListener("load", function () {
-    const svgDoc = this.contentDocument;
-    
-    // Menambahkan event klik pada setiap provinsi yang ada dalam data
-    for (const id in dataDaerah) {
-        const region = svgDoc.getElementById(id);
-        if (region) {
-            region.addEventListener("click", function () {
-                console.log(`Clicked on region: ${id}`); // Log untuk debugging
-                showDetails(id);
-                
-                // Menghapus kelas terpilih dari elemen sebelumnya
-                svgDoc.querySelectorAll(".selected-region").forEach(el => el.classList.remove("selected-region"));
-                
-                // Menambahkan kelas terpilih ke elemen saat ini
-                region.classList.add("selected-region");
-            });
-        } else {
-            console.warn(`Region not found: ${id}`); // Log jika region tidak ditemukan
-        }
-    }
-});
-
-        let audio; // Variabel audio untuk kontrol suara
-
-        function showDetails(regionId) {
-            const daerahData = dataDaerah[regionId];
-            if (daerahData) {
-                document.getElementById("daerah -title").innerText = daerahData.title;
-                document.getElementById("description").innerText = daerahData.description;
-                
-                const alatMusikImage = document.getElementById("alat-musik-image");
-                alatMusikImage.src = daerahData.image;
-                alatMusikImage.style.display = "block";
-                
-                const playButton = document.getElementById("play-sound");
-                playButton.style.display = "inline-block";
-                playButton.setAttribute("data-sound", daerahData.sound);
-
+        // Fungsi untuk menampilkan detail
+        function showDetails(id) {
+            const daerah = dataDaerah[id];
+            if (daerah) {
+                document.getElementById("daerah-title").innerText = daerah.title;
+                document.getElementById("description").innerText = daerah.description;
+                const image = document.getElementById("alat-musik-image");
+                image.src = daerah.image;
+                image.style.display = "block";
+                document.getElementById("play-sound").style.display = "inline-block";
                 document.getElementById("stop-sound").style.display = "inline-block";
             }
         }
 
+        // Fungsi untuk memutar suara
+        let audio;
         function playSound() {
-            const soundFile = document.getElementById("play-sound").getAttribute("data-sound");
-            if (soundFile) {
-                if (audio) audio.pause(); // Menghentikan suara sebelumnya jika ada
-                audio = new Audio(soundFile);
+            const id = document.getElementById("daerah-title").innerText;
+            const daerah = Object.keys(dataDaerah).find(key => dataDaerah[key].title === id);
+            if (daerah) {
+                audio = new Audio(dataDaerah[daerah].sound);
                 audio.play();
             }
         }
 
+        // Fungsi untuk menghentikan suara
         function stopSound() {
             if (audio) {
                 audio.pause();
-                audio.currentTime = 0; // Mengembalikan ke awal
+                audio.currentTime = 0;
             }
         }
+
+        // Event listener saat peta SVG di-load
+        document.getElementById("indonesia-map").addEventListener("load", function () {
+            const svgDoc = this.contentDocument;
+            for (const id in dataDaerah) {
+                const region = svgDoc.getElementById(id);
+                if (region) {
+                    region.addEventListener("click", function () {
+                        console.log(`Clicked on region: ${id}`);
+                        showDetails(id);
+                        svgDoc.querySelectorAll(".selected-region").forEach(el => el.classList.remove("selected-region"));
+                        region.classList.add("selected-region");
+                    });
+                } else {
+                    console.warn(`Region not found: ${id}`);
+                }
+            }
+        });
