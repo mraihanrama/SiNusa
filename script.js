@@ -1,4 +1,6 @@
  // Data alat musik dan tarian
+const backButton = document.getElementById("back-button");
+
         const dataDaerah = {
             "ID-AC": {
                 title: "Aceh",
@@ -119,6 +121,9 @@ function showDetails(regionId) {
 
         document.getElementById("stop-sound").style.display = "inline-block";
     }
+}
+function goBack() {
+    window.location.href = 'index.html';
 }
 
 function playSound() {
