@@ -3,38 +3,38 @@
             "ID-AC": {
                 title: "Aceh",
                 description: "Serune Kalee adalah alat musik khas Aceh. Tari tradisionalnya antara lain Tari Saman.",
-                image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D10151850610731791%26id%3D255160681790%26set%3Da.275811021790%26locale%3Dko_KR&psig=AOvVaw14D2R5a9lxiLmDdOgBiBIN&ust=1731412690585000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDm9Y2d1IkDFQAAAAAdAAAAABAE",
-                sound: "sounds/serune-kalee.mp3"
+                image: "preset/images/serunai.jpg
+                sound: "preset/sounds/serunai.mp3"
             },
             "ID-BA": {
                 title: "Bali",
                 description: "Gamelan adalah alat musik khas Bali. Tari tradisionalnya antara lain Tari Kecak.",
-                image: "images/gamelan-bali.png",
-                sound: "sounds/gamelan-bali.mp3"
+                image: "preset/images/gamelan-bali.png",
+                sound: "preset/sounds/gamelan-bali.mp3"
             },
             "ID-BB": {
                 title: "Bangka Belitung",
-                description: "Tari Belibis adalah tarian tradisional Bangka Belitung. Alat musik yang digunakan adalah Gendang.",
-                image: "images/gendang-bangka.png",
-                sound: "sounds/gendang-bangka.mp3"
+                description: "Tari Belibis adalah tarian tradisional Bangka Belitung. Alat musik daerahnya adalah Dambus.",
+                image: "preset/images/dambus.jpg",
+                sound: "preset/sounds/dambus.mp3"
             },
             "ID-BE": {
                 title: "Bengkulu",
-                description: "Rendang adalah alat musik khas Bengkulu. Tari tradisionalnya adalah Tari Andun.",
-                image: "images/rendang-bengkulu.png",
-                sound: "sounds/rendang-bengkulu.mp3"
+                description: "Dol atau Doli adalah alat musik khas Bengkulu. Tari tradisionalnya adalah Tari Andun.",
+                image: "preset/images/dol.png",
+                sound: "preset/sounds/dol.mp3"
             },
             "ID-BT": {
                 title: "Banten",
                 description: "Tanjidor adalah alat musik khas Banten. Tari tradisionalnya adalah Tari Topeng.",
-                image: "images/tanjidor-banten.png",
-                sound: "sounds/tanjidor-banten.mp3"
+                image: "preset/images/tanjidor.png",
+                sound: "preset/sounds/tanjidor.mp3"
             },
             "ID-GO": {
                 title: "Gorontalo",
-                description: "Alat musik Bili-Bili adalah khas Gorontalo. Tari tradisionalnya adalah Tari Dero.",
-                image: "images/bili-bili-gorontalo.png",
-                sound: "sounds/bili-bili-gorontalo.mp3"
+                description: "Alat musik Polopalo adalah khas Gorontalo. Tari tradisionalnya adalah Tari Dero.",
+                image: "preset/images/polopalo.png",
+                sound: "preset/sounds/polopalo.mp3"
             },
             "ID-JA": {
                 title: "Jambi",
@@ -45,8 +45,8 @@
             "ID-JB": {
                 title: "Jawa Barat",
                 description: "Angklung adalah alat musik khas Jawa Barat. Tari tradisionalnya antara lain Tari Jaipong.",
-                image: "preset/angklung.png",
-                sound: "preset/suara angklung.mp3"
+                image: "preset/images/angklung.png",
+                sound: "preset/sounds/angklung.mp3"
             },
             "ID-JI": {
                 title: "Jawa Timur",
