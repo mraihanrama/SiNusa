@@ -1,73 +1,108 @@
+/* Gaya umum untuk halaman */
 body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0;
-            padding: 0;
-        }
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
 
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            width: 100%;
-        }
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
 
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-        }
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
 
-        .peta {
-            width: 80%;
-            max-width: 600px;
-        }
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+}
 
-        #details {
-            text-align: center;
-            margin-top: 20px;
-            padding: 10px;
-            border: 1px solid #4CAF50;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-            width: 80%;
-            max-width: 600px;
-        }
+/* Gaya untuk elemen peta */
+.peta {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px 0;
+}
 
-        #play-sound, #stop-sound {
-            padding: 10px 20px;
-            font-size: 1em;
-            background-color: #ff6f61;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
+/* Menambahkan gaya untuk elemen detail */
+#details {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
 
-        #play-sound:hover, #stop-sound:hover {
-            background-color: #45a049;
-        }
+#play-sound, #stop-sound {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s ease;
+}
 
-        .selected-region {
-            fill: #FFD700; /* Mengubah warna saat provinsi diklik */
-        }
+#play-sound:hover, #stop-sound:hover {
+    background-color: #388E3C;
+}
 
-        /* Mobile responsiveness */
-        @media (max-width: 600px) {
-            header {
-                font-size: 1.5em;
-            }
+/* Gaya saat provinsi dipilih */
+.selected-region {
+    fill: #FFD700 !important; /* Warna saat provinsi diklik */
+    transform: scale(1.5); /* Membesarkan provinsi yang dipilih */
+    transform-origin: center;
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
 
-            #details {
-                width: 90%;
-            }
+/* Efek tambahan saat hover untuk peta */
+#indonesia-map path:hover {
+    fill: #FFEB3B; /* Warna lebih terang saat hover */
+    cursor: pointer;
+    transition: fill 0.2s ease;
+}
 
-            .peta {
-                width: 100%;
-            }
-        }
+/* Gaya untuk judul dan deskripsi alat musik */
+#daerah-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+#description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Gaya untuk gambar alat musik */
+#alat-musik-image {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+}
