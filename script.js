@@ -40,9 +40,9 @@ const dataDaerah = {
     },
     "ID-JB": {
         title: "Jawa Barat",
-        description: "Serune Kalee adalah alat musik khas Aceh. Tari tradisionalnya antara lain Tari Saman.",
-        image: "images/serune-kalee.png",
-        sound: "sounds/serune-kalee.mp3"
+        description: "Angklung adalah alat musik khas Jawa Barat. Tari tradisionalnya antara lain Tari Jaipong.",
+        image: "preset/angklung.png",
+        sound: "preset/suara angklung.mp3"
     },
     "ID-JI": {
         title: "Jawa Timur",
