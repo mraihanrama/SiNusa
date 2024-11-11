@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunia Tari Tradisional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Dunia Tari Tradisional</h1>
+        <p>Pilih provinsi di peta untuk menjelajahi tarian tradisional dari seluruh Indonesia.</p>
+    </header>
+    
+    <main>
+        <!-- Tombol Kembali ke Halaman Utama -->
+        <button onclick="goBack()" class="back-button">Kembali</button>
+
+        <!-- Bagian Peta Interaktif -->
+        <section id="peta-interaktif">
+            <h2>Peta Indonesia</h2>
+            <div class="peta">
+                <!-- Embed SVG peta interaktif Indonesia -->
+                <object type="image/svg+xml" data="indonesia.svg" id="indonesia-map" onclick="selectRegion(event)">
+                    Peta interaktif tidak dapat ditampilkan.
+                </object>
+            </div>
+        </section>
+        
+        <!-- Bagian Detail Tarian -->
+        <section id="details" style="display: none;">
+            <h2 id="provinsi-title">Detail Tarian Tradisional</h2>
+            <p id="description">Pilih provinsi di peta untuk melihat informasi tarian tradisional dari daerah tersebut.</p>
+            <img id="tari-image" src="" alt="Tarian Tradisional" style="display:none;">
+            <button id="play-sound" onclick="playSound()" style="display:none;">Putar Musik Tari</button>
+            <button id="stop-sound" onclick="stopSound()" style="display:none;">Stop Musik</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
