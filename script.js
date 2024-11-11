@@ -82,25 +82,28 @@
         };
 
         // Event listener saat peta SVG di-load
-        document.getElementById("indonesia-map").addEventListener("load", function () {
-            const svgDoc = this.contentDocument;
-            
-            // Menambahkan event klik pada setiap provinsi yang ada dalam data
-            for (const id in dataDaerah) {
-                const region = svgDoc.getElementById(id);
-                if (region) {
-                    region.addEventListener("click", function () {
-                        showDetails(id);
-                        
-                        // Menghapus kelas terpilih dari elemen sebelumnya
-                        svgDoc.querySelectorAll(".selected-region").forEach(el => el.classList.remove("selected-region"));
-                        
-                        // Menambahkan kelas terpilih ke elemen saat ini
-                        region.classList.add("selected-region");
-                    });
-                }
-            }
-        });
+document.getElementById("indonesia-map").addEventListener("load", function () {
+    const svgDoc = this.contentDocument;
+    
+    // Menambahkan event klik pada setiap provinsi yang ada dalam data
+    for (const id in dataDaerah) {
+        const region = svgDoc.getElementById(id);
+        if (region) {
+            region.addEventListener("click", function () {
+                console.log(`Clicked on region: ${id}`); // Log untuk debugging
+                showDetails(id);
+                
+                // Menghapus kelas terpilih dari elemen sebelumnya
+                svgDoc.querySelectorAll(".selected-region").forEach(el => el.classList.remove("selected-region"));
+                
+                // Menambahkan kelas terpilih ke elemen saat ini
+                region.classList.add("selected-region");
+            });
+        } else {
+            console.warn(`Region not found: ${id}`); // Log jika region tidak ditemukan
+        }
+    }
+});
 
         let audio; // Variabel audio untuk kontrol suara
 
