@@ -33,5 +33,5 @@ main {
 }
 
 .selected-region {
-    fill: #FFD700 !important; /* Mengubah warna saat provinsi diklik */
+    fill: #FFD700; /* Mengubah warna saat provinsi diklik */
 }
