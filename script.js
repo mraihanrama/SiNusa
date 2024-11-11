@@ -1,81 +1,135 @@
-// Mengambil elemen-elemen yang diperlukan
-const petaInteraktif = document.getElementById("peta-interaktif");
-const detailsSection = document.getElementById("details");
-const backButton = document.getElementById("back-button");
+// Data alat musik dan tarian
+const dataDaerah = {
+    "ID-AC": {
+        title: "Aceh",
+        description: "Serune Kalee adalah alat musik khas Aceh. Tari tradisionalnya antara lain Tari Saman.",
+        image: "images/serune-kalee.png",
+        sound: "sounds/serune-kalee.mp3"
+    },"ID-BA": {
+        title: "Bali",
+        description: "Serune Kalee adalah alat musik khas Aceh. Tari tradisionalnya antara lain Tari Saman.",
+        image: "images/serune-kalee.png",
+        sound: "sounds/serune-kalee.mp3"
+    },"ID-BB": {
+        title: "Bangka Belitung",
+        description: "Serune Kalee adalah alat musik khas Aceh. Tari tradisionalnya antara lain Tari Saman.",
+        image: "images/serune-kalee.png",
+        sound: "sounds/serune-kalee.mp3"
+    },"ID-BE": {
+        title: "Bengkulu",
+        description: "Serune Kalee adalah alat musik khas Aceh. Tari tradisionalnya antara lain Tari Saman.",
+        image: "images/serune-kalee.png",
+        sound: "sounds/serune-kalee.mp3"
+    },"ID-BT": {
+        title: "Banten",
+        description: "Serune Kalee adalah alat musik khas Aceh. Tari tradisionalnya antara lain Tari Saman.",
+        image: "images/serune-kalee.png",
+        sound: "sounds/serune-kalee.mp3"
+    },
+    "ID-GO": {
+        title: "Gorontalo",
+        description: "Serune Kalee adalah alat musik khas Aceh. Tari tradisionalnya antara lain Tari Saman.",
+        image: "images/serune-kalee.png",
+        sound: "sounds/serune-kalee.mp3"
+    },
+    "ID-JA": {
+        title: "Jambi",
+        description: "Serune Kalee adalah alat musik khas Aceh. Tari tradisionalnya antara lain Tari Saman.",
+        image: "images/serune-kalee.png",
+        sound: "sounds/serune-kalee.mp3"
+    },
+    "ID-JB": {
+        title: "Jawa Barat",
+        description: "Serune Kalee adalah alat musik khas Aceh. Tari tradisionalnya antara lain Tari Saman.",
+        image: "images/serune-kalee.png",
+        sound: "sounds/serune-kalee.mp3"
+    },
+    "ID-JI": {
+        title: "Jawa Timur",
+        description: "Serune Kalee adalah alat musik khas Aceh. Tari tradisionalnya antara lain Tari Saman.",
+        image: "images/serune-kalee.png",
+        sound: "sounds/serune-kalee.mp3"
+    },
+    "ID-JK": {
+        title: "Jakarta",
+        description: "Serune Kalee adalah alat musik khas Aceh. Tari tradisionalnya antara lain Tari Saman.",
+        image: "images/serune-kalee.png",
+        sound: "sounds/serune-kalee.mp3"
+    },
+    "ID-JT": {
+        title: "Jawa Tengah",
+        description: "Serune Kalee adalah alat musik khas Aceh. Tari tradisionalnya antara lain Tari Saman.",
+        image: "images/serune-kalee.png",
+        sound: "sounds/serune-kalee.mp3"
+    },
+    "ID-KB": {
+        title: "Kalimantan Barat",
+        description: "Serune Kalee adalah alat musik khas Aceh. Tari tradisionalnya antara lain Tari Saman.",
+        image: "images/serune-kalee.png",
+        sound: "sounds/serune-kalee.mp3"
+    },
+    "ID-KI": {
+        title: "Kalimantan Timur",
+        description: "Serune Kalee adalah alat musik khas Aceh. Tari tradisionalnya antara lain Tari Saman.",
+        image: "images/serune-kalee.png",
+        sound: "sounds/serune-kalee.mp3"
+    },
+    // Tambahkan data untuk provinsi lain sesuai ID-nya
+};
 
-// Fungsi untuk menampilkan detail provinsi yang dipilih
-function selectRegion(regionId) {
-    const regionElement = document.getElementById(regionId);
-
-    // Menghapus kelas 'selected-region' dari elemen sebelumnya
-    document.querySelectorAll(".selected-region").forEach(el => el.classList.remove("selected-region"));
-
-    // Menambahkan kelas 'selected-region' ke provinsi yang dipilih
-    if (regionElement) {
-        regionElement.classList.add("selected-region");
-    }
-
-    // Sembunyikan peta dan tampilkan detail
-    petaInteraktif.classList.add("hidden");
-    detailsSection.classList.remove("hidden");
-    backButton.classList.remove("hidden");
-
-    // Menampilkan detail untuk provinsi yang dipilih
-    showDetails(regionId);  // Isi detail berdasarkan provinsi
-}
-
-// Fungsi untuk kembali ke peta
-function goBack() {
-    // Sembunyikan detail dan tampilkan peta
-    detailsSection.classList.add("hidden");
-    petaInteraktif.classList.remove("hidden");
-    backButton.classList.add("hidden");
-
-    // Hapus kelas 'selected-region' dari provinsi yang dipilih
-    document.querySelectorAll(".selected-region").forEach(el => el.classList.remove("selected-region"));
-}
-
-// Fungsi untuk menampilkan detail alat musik dan tarian (sesuaikan dengan data provinsi)
-function showDetails(region) {
-    const daerahData = {
-        "ID-AC": {
-            title: "Aceh",
-            description: "Aceh memiliki alat musik tradisional seperti Serune Kale, dan tarian Saman.",
-            image: "path/to/aceh-image.jpg",  // Ganti dengan path gambar
-            sound: "path/to/aceh-sound.mp3"   // Ganti dengan path suara
+// Event listener saat peta SVG di-load
+document.getElementById("indonesia-map").addEventListener("load", function () {
+    const svgDoc = this.contentDocument;
+    
+    // Menambahkan event klik pada setiap provinsi yang ada dalam data
+    for (const id in dataDaerah) {
+        const region = svgDoc.getElementById(id);
+        if (region) {
+            region.addEventListener("click", function () {
+                showDetails(id);
+                
+                // Menghapus kelas terpilih dari elemen sebelumnya
+                svgDoc.querySelectorAll(".selected-region").forEach(el => el.classList.remove("selected-region"));
+                
+                // Menambahkan kelas terpilih ke elemen saat ini
+                region.classList.add("selected-region");
+            });
         }
-        // Tambahkan data untuk setiap provinsi lainnya
-    };
+    }
+});
 
-    const data = daerahData[region];
-    if (data) {
-        document.getElementById("daerah-title").innerText = data.title;
-        document.getElementById("description").innerText = data.description;
+let audio; // Variabel audio untuk kontrol suara
+
+function showDetails(regionId) {
+    const daerahData = dataDaerah[regionId];
+    if (daerahData) {
+        document.getElementById("daerah-title").innerText = daerahData.title;
+        document.getElementById("description").innerText = daerahData.description;
         
         const alatMusikImage = document.getElementById("alat-musik-image");
-        alatMusikImage.src = data.image;
+        alatMusikImage.src = daerahData.image;
         alatMusikImage.style.display = "block";
         
-        document.getElementById("play-sound").style.display = "inline-block";
-        document.getElementById("play-sound").setAttribute("data-sound", data.sound);
+        const playButton = document.getElementById("play-sound");
+        playButton.style.display = "inline-block";
+        playButton.setAttribute("data-sound", daerahData.sound);
+
+        document.getElementById("stop-sound").style.display = "inline-block";
     }
 }
 
-// Fungsi untuk memainkan suara alat musik
 function playSound() {
     const soundFile = document.getElementById("play-sound").getAttribute("data-sound");
     if (soundFile) {
-        const audio = new Audio(soundFile);
+        if (audio) audio.pause(); // Menghentikan suara sebelumnya jika ada
+        audio = new Audio(soundFile);
         audio.play();
     }
 }
 
-// Fungsi untuk menghentikan suara alat musik
 function stopSound() {
-    const soundFile = document.getElementById("play-sound").getAttribute("data-sound");
-    if (soundFile) {
-        const audio = new Audio(soundFile);
+    if (audio) {
         audio.pause();
-        audio.currentTime = 0;  // Kembali ke awal suara
+        audio.currentTime = 0; // Mengembalikan ke awal
     }
 }
