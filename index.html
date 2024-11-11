@@ -11,10 +11,9 @@
     <header>
         <h1 class="text-center">Selamat Datang di Dunia Alat Musik dan Tarian Daerah</h1>
     </header>
-    
-    <main>
+   <main>
         <section id="peta-interaktif">
-            <h2>Pilih Daerah</h2>
+            <h2 class="text-center">Pilih Daerah</h2>
             <div class="peta">
                 <!-- Peta Indonesia SVG -->
                 <object id="indonesia-map" data="preset/indonesia.svg" type="image/svg+xml"></object>
@@ -24,12 +23,11 @@
         <section id="details">
             <h2 id="daerah-title">Detail Alat Musik dan Tarian</h2>
             <p id="description">Pilih wilayah di atas untuk melihat alat musik dan tarian daerah tersebut.</p>
-            <img id="alat-musik-image" src="" alt="Alat Musik" style="display:none;">
+            <img id="alat-musik-image" src="" alt="Alat Musik" style="display:none; max-width: 100%;">
             <button id="play-sound" onclick="playSound()" style="display:none;">Putar Suara</button>
             <button id="stop-sound" onclick="stopSound()" style="display:none;">Stop Sound</button>
         </section>
     </main>
-
     <script src="script.js"></script>
 </body>
 </html>
