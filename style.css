@@ -1,0 +1,59 @@
+/* Gaya dasar */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.peta {
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Sembunyikan elemen dengan kelas 'hidden' */
+
+
+/* Gaya detail */
+#details {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Tombol suara */
+#play-sound, #stop-sound, #back-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #FF5722;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#back-button:hover, #play-sound:hover, #stop-sound:hover {
+    background-color: #E64A19;
+}
+
+/* Efek pada provinsi terpilih */
+.selected-region {
+    fill: #FF5722 !important;
+    transform: scale(1.5);
+    transform-origin: center;
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
