@@ -3,7 +3,7 @@
             "ID-AC": {
                 title: "Aceh",
                 description: "Serune Kalee adalah alat musik khas Aceh. Tari tradisionalnya antara lain Tari Saman.",
-                image: "images/serune-kalee.png",
+                image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D10151850610731791%26id%3D255160681790%26set%3Da.275811021790%26locale%3Dko_KR&psig=AOvVaw14D2R5a9lxiLmDdOgBiBIN&ust=1731412690585000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDm9Y2d1IkDFQAAAAAdAAAAABAE",
                 sound: "sounds/serune-kalee.mp3"
             },
             "ID-BA": {
