@@ -41,7 +41,7 @@ let audio; // Variabel audio untuk kontrol suara
 let dataDaerah; // Variabel untuk menyimpan data dari JSON
 
 // Memuat data dari file JSON
-fetch("dataDaerah.json")
+fetch("data/dataDaerah.json")
     .then(response => response.json())
     .then(data => {
         dataDaerah = data; // Menyimpan data JSON ke variabel global
