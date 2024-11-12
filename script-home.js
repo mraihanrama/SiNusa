@@ -5,7 +5,3 @@ function goToPage(choice) {
         window.location.href = 'tarian.html'; // Halaman tari tradisional
     }
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-    const exploreButton = document.querySelector(".jelajahi");
-}
