@@ -28,61 +28,60 @@ p {
     color: #333;
 }
 
-/* Container Flex yang Mendukung Pembungkusan */
 .option-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Jarak antar item */
-    justify-content: center; /* Pusatkan elemen dalam container */
+    gap: 40px;
     margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-/* Ukuran dan Pengaturan Flex Option */
 .option {
-    flex: 1 1 300px; /* Beri basis lebar agar tetap responsif */
-    max-width: 350px; /* Batasi lebar maksimum */
-    height: 250px;
+    width: 350px;
     padding: 20px;
-    background-size: cover;
-    background-position: center;
+    background-color: #FFF;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
     cursor: pointer;
-    position: relative;
     transition: transform 0.3s, box-shadow 0.3s;
-    overflow: hidden;
+    position: relative;
 }
 
 .option:hover {
-    transform: scale(1.05);
+    transform: scale(1.1) rotate(-2deg);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.text-box {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-    background-color: rgba(255, 255, 255, 0.8); /* Kotak teks semi transparan */
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s;
+.option img {
+    width: 200px;
+    height: 180px;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+    border-radius: 15px;
 }
 
-.option:hover .text-box {
-    opacity: 1; /* Teks muncul saat hover */
+.option:hover img {
+    transform: scale(1.1);
 }
 
-.text-box h2 {
-    font-size: 1.5em;
-    color: #333;
-    margin: 0;
+.option h2 {
+    font-size: 1.8em;
+    color: #FF6F61;
+    margin-bottom: 10px;
 }
 
-.text-box p {
-    font-size: 1em;
+.option p {
     color: #555;
-    margin: 5px 0 0;
+    font-size: 1.1em;
+}
+
+.interactive-image {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+    border-radius: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
