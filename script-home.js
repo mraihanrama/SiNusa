@@ -5,3 +5,8 @@ function goToPage(choice) {
         window.location.href = 'tarian.html'; // Halaman tari tradisional
     }
 }
+
+// Adding event listeners for the Share and Skip buttons
+document.addEventListener("DOMContentLoaded", () => {
+    // Selecting the buttons
+    const exploreButton = document.querySelector(".jelajahi");
