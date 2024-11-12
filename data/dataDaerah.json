@@ -8,13 +8,13 @@
 "ID-BA": {
     "title": "Bali",
     "description": "Gamelan Bali adalah alat musik khas Bali. Tari tradisionalnya antara lain Tari Kecak.",
-    "image": "preset/images/gamelan-bali.jpg",
+    "image": "preset/images/gamelan-bali.png",
     "sound": "preset/sounds/gamelan-bali.mp3"
 },
 "ID-BB": {
     "title": "Bangka Belitung",
     "description": "Dambus adalah alat musik khas Bangka Belitung. Tari tradisionalnya antara lain Tari Campak.",
-    "image": "preset/images/dambus.png",
+    "image": "preset/images/dambus.jpg",
     "sound": "preset/sounds/dambus.mp3"
 },
 "ID-BE": {
@@ -26,7 +26,7 @@
 "ID-BT": {
     "title": "Banten",
     "description": "Tanjidor adalah alat musik khas Banten. Tari tradisionalnya antara lain Tari Rampak Bedug.",
-    "image": "preset/images/tanjidor.jpg",
+    "image": "preset/images/tanjidor.png",
     "sound": "preset/sounds/tanjidor.mp3"
 },
 "ID-GO": {
