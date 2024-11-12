@@ -6,7 +6,6 @@ function goToPage(choice) {
     }
 }
 
-// Adding event listeners for the Share and Skip buttons
 document.addEventListener("DOMContentLoaded", () => {
-    // Selecting the buttons
     const exploreButton = document.querySelector(".jelajahi");
+}
