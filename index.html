@@ -8,40 +8,21 @@
 </head>
 <body>
     <header>
-        <h1>Selamat Datang di SiNusa App</h1>
-        <p>Pilih petualangan Anda: Menjelajahi dunia alat musik atau dunia tari tradisional</p>
-        <p>Mari mengenal setiap budaya yang terdapat di Indonesia</p>
+        <h1>Selamat Datang di Kebudayaan Indonesia</h1>
+        <p>Pilih petualangan Anda: Menjelajahi dunia alat musik atau dunia tari daerah</p>
     </header>
-
+    
     <main>
         <div class="option-container">
-            <div class="card">
-                <div class="card-header" style="background: linear-gradient(45deg, #FFB74D, #FF5722);">
-                    <div class="icon">
-                       <img src="preset/images/music-icon.png" alt="Alat Musik">
-                    </div>
-                </div>
-                <div class="card-body">
-                    <h2>Dunia Alat Musik</h2>
-                    <p>Jelajahi beragam alat musik tradisional dari seluruh Indonesia.</p>
-                </div>
-                <div class="card-footer">
-                    <button class="jelajahi"  onclick="goToPage('musik')">Masuk dunia Alat Musik</button>
-                </div>
+            <div class="option" onclick="goToPage('musik')">
+                <img src="preset/images/music-icon.png" alt="Dunia Alat Musik">
+                <h2>Dunia Alat Musik</h2>
+                <p>Jelajahi beragam alat musik tradisional dari seluruh Indonesia.</p>
             </div>
-            <div class="card">
-                <div class="card-header" style="background: linear-gradient(45deg, #42A5F5, #1E88E5);">
-                    <div class="icon">
-                        <img src="preset/images/dance-icon.png" alt="Tari Daerah">
-                    </div>
-                </div>
-                <div class="card-body">
-                    <h2>Dunia Tari Daerah</h2>
-                    <p>Kenali keindahan gerakan tari dari berbagai daerah di Indonesia.</p>
-                </div>
-                <div class="card-footer">
-                    <button class="jelajahi" onclick="goToPage('tarian')">Masuk dunia Tari Daerah</button>
-                </div>
+            <div class="option" onclick="goToPage('tarian')">
+                <img src="preset/images/dance-icon.png" alt="Dunia Tari Tradisional">
+                <h2>Dunia Tari Daerah</h2>
+                <p>Kenali keindahan gerakan tari dari berbagai daerah di Indonesia.</p>
             </div>
         </div>
     </main>
