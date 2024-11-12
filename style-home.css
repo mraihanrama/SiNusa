@@ -1,63 +1,87 @@
+/* CSS Style */
 body {
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
-    background-color: #f3f4f6;
+    background: linear-gradient(to bottom, #84fab0, #8fd3f4);
 }
 
 header {
     text-align: center;
     padding: 20px;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 h1 {
-    color: #4CAF50;
-    font-size: 2.5em;
+    color: #FF6F61;
+    font-size: 3em;
     margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 p {
-    font-size: 1.1em;
-    color: #555;
+    font-size: 1.3em;
+    color: #333;
 }
 
 .option-container {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .option {
-    width: 500px;
+    width: 350px;
     padding: 20px;
-    background-color: white;
-    border-radius: 10px;
+    background-color: #FFF;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
 }
 
 .option:hover {
-    transform: scale(1.05);
+    transform: scale(1.1) rotate(-2deg);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .option img {
-    width: 250px;
-    height: 200px;
+    width: 200px;
+    height: 180px;
     margin-bottom: 15px;
+    transition: transform 0.3s;
+    border-radius: 15px;
+}
+
+.option:hover img {
+    transform: scale(1.1);
 }
 
 .option h2 {
-    font-size: 1.5em;
-    color: #333;
+    font-size: 1.8em;
+    color: #FF6F61;
+    margin-bottom: 10px;
 }
 
 .option p {
-    color: #777;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.interactive-image {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+    border-radius: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
