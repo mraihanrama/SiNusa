@@ -1,3 +1,4 @@
+const dataDaerah = {
 "ID-AC": {
     "title": "Aceh",
     "description": "Serune Kalee adalah alat musik khas Aceh. Tari tradisionalnya antara lain Tari Saman.",
@@ -142,4 +143,4 @@
     "image": "preset/images/gondangbatak.jpg",
     "sound": "preset/sounds/gondangbatak.mp3"
 }
-
+};
