@@ -5,7 +5,7 @@ document.getElementById("indonesia-map").addEventListener("load", function () {
     const svgDoc = this.contentDocument;
 
     // Mengambil data dari dataDaerah.json
-    fetch("dataDaerah.json")
+    fetch("data/dataDaerah.json")
         .then(response => response.json())
         .then(dataDaerah => {
             // Menambahkan event klik pada setiap provinsi yang ada dalam data
@@ -38,8 +38,23 @@ function showDetails(id, dataDaerah) {
     }
 }
 let audio; // Variabel audio untuk kontrol suara
+let dataDaerah; // Variabel untuk menyimpan data dari JSON
+
+// Memuat data dari file JSON
+fetch("dataDaerah.json")
+    .then(response => response.json())
+    .then(data => {
+        dataDaerah = data; // Menyimpan data JSON ke variabel global
+    })
+    .catch(error => console.error("Gagal memuat data daerah:", error));
 
 function showDetails(regionId) {
+    // Memastikan dataDaerah sudah terdefinisi
+    if (!dataDaerah) {
+        console.error("Data belum dimuat.");
+        return;
+    }
+
     const daerahData = dataDaerah[regionId];
     if (daerahData) {
         document.getElementById("daerah-title").innerText = daerahData.title;
@@ -56,6 +71,7 @@ function showDetails(regionId) {
         document.getElementById("stop-sound").style.display = "inline-block";
     }
 }
+
 function goBack() {
     window.location.href = 'index.html';
 }
