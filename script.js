@@ -1,5 +1,5 @@
- // Data alat musik dan tarian
-const backButton = document.getElementById("back-button");
+let audio; // Variabel audio untuk kontrol suara
+
 // Event listener saat peta SVG di-load
 document.getElementById("indonesia-map").addEventListener("load", function () {
     const svgDoc = this.contentDocument;
@@ -29,41 +29,15 @@ document.getElementById("indonesia-map").addEventListener("load", function () {
 
 // Fungsi untuk menampilkan detail
 function showDetails(id, dataDaerah) {
-    const regionData = dataDaerah[id];
-    if (regionData) {
-        // Contoh: tampilkan title dan description
-        console.log("Title:", regionData.title);
-        console.log("Description:", regionData.description);
-        // Anda bisa menambahkan logika lain untuk menampilkan data ini di UI
-    }
-}
-let audio; // Variabel audio untuk kontrol suara
-let dataDaerah; // Variabel untuk menyimpan data dari JSON
-
-// Memuat data dari file JSON
-fetch("data/dataDaerah.json")
-    .then(response => response.json())
-    .then(data => {
-        dataDaerah = data; // Menyimpan data JSON ke variabel global
-    })
-    .catch(error => console.error("Gagal memuat data daerah:", error));
-
-function showDetails(regionId) {
-    // Memastikan dataDaerah sudah terdefinisi
-    if (!dataDaerah) {
-        console.error("Data belum dimuat.");
-        return;
-    }
-
-    const daerahData = dataDaerah[regionId];
+    const daerahData = dataDaerah[id];
     if (daerahData) {
         document.getElementById("daerah-title").innerText = daerahData.title;
         document.getElementById("description").innerText = daerahData.description;
-        
+
         const alatMusikImage = document.getElementById("alat-musik-image");
         alatMusikImage.src = daerahData.image;
         alatMusikImage.style.display = "block";
-        
+
         const playButton = document.getElementById("play-sound");
         playButton.style.display = "inline-block";
         playButton.setAttribute("data-sound", daerahData.sound);
