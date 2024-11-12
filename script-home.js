@@ -1,3 +1,4 @@
+
 function goToPage(choice) {
     if (choice === 'musik') {
         window.location.href = 'musik.html'; // Halaman alat musik

@@ -14,19 +14,22 @@
     
     <main>
         <div class="option-container">
-            <div class="option" onclick="goToPage('musik')">
-                <img src="preset/images/music-icon.png" alt="Dunia Alat Musik">
-                <h2>Dunia Alat Musik</h2>
-                <p>Jelajahi beragam alat musik tradisional dari seluruh Indonesia.</p>
+            <div class="option" style="background-image: url('preset/images/music-icon.png');">
+                <div class="text-box">
+                    <h2>Dunia Alat Musik</h2>
+                    <p>Jelajahi beragam alat musik tradisional dari seluruh Indonesia.</p>
+                    <button class="explore-button" onclick="goToPage('musik')">Jelajahi</button>
+                </div>        
             </div>
-            <div class="option" onclick="goToPage('tarian')">
-                <img src="preset/images/dance-icon.jpg" alt="Dunia Tari Tradisional">
-                <h2>Dunia Tari Daerah</h2>
-                <p>Kenali keindahan gerakan tari dari berbagai daerah di Indonesia.</p>
+            <div class="option" style="background-image: url('preset/images/dance-icon.jpg');">
+                <div class="text-box">
+                    <h2>Dunia Tari Daerah</h2>
+                    <p>Jelajahi beragam Tarian Daerah dari seluruh Indonesia.</p>
+                    <button class="explore-button" onclick="goToPage('tarian')">Jelajahi</button>
             </div>
         </div>
+        </div>
     </main>
-
     <script src="script-home.js"></script>
 </body>
 </html>

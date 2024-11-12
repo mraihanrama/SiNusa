@@ -1,0 +1,111 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Font yang menyenangkan */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0f7fa; /* Latar belakang biru muda */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #00796b; /* Warna hijau tua */
+    font-size: 2.5em; /* Ukuran font */
+    margin: 0;
+    text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.7); /* Bayangan halus */
+}
+
+h2 {
+    color: #004d40; /* Warna hijau lebih gelap */
+    font-size: 2em; /* Ukuran font */
+    margin: 20px 0;
+}
+
+p {
+    font-size: 1.2em;
+    color: #00796b; /* Warna hijau tua */
+    text-align: center;
+}
+
+/* Container untuk detail tari */
+#details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0; /* Margin di sekitar detail */
+}
+
+#tarian-video {
+    width: 300px; /* Ukuran lebar tetap untuk video */
+    height: auto; /* Tinggi otomatis untuk menjaga rasio aspek */
+    border-radius: 10px; /* Sudut membulat */
+    margin-top: 10px; /* Jarak atas untuk pemisahan dari elemen di atas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek */
+    display: block; /* Pastikan video ditampilkan sebagai blok */
+}
+
+
+.text-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih transparan */
+    border-radius: 8px; /* Sudut membulat */
+    padding: 15px; /* Padding di dalam text box */
+    margin-top: 10px; /* Margin atas untuk jarak */
+    text-align: center; /* Teks rata tengah */
+    max-width: 300px; /* Lebar maksimum untuk text box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek */
+}
+
+button {
+    background-color: #00796b; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Tanpa border */
+    border-radius: 5px; /* Sudut membulat */
+    padding: 10px 20px; /* Padding tombol */
+    font-size: 1.1em; /* Ukuran font tombol */
+    cursor: pointer; /* Kursor pointer saat hover */
+    transition: background-color 0.3s; /* Transisi untuk efek hover */
+    margin: 10px; /* Spasi di sekitar tombol */
+}
+
+button:hover {
+    background-color: #004d40; /* Warna lebih gelap saat hover */
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Ukuran font lebih kecil untuk layar kecil */
+    }
+    h2 {
+        font-size: 1.5em; /* Ukuran font lebih kecil untuk layar kecil */
+    }
+    p {
+        font-size: 1em; /* Ukuran font lebih kecil untuk layar kecil */
+    }
+    button {
+        font-size: 1em; /* Ukuran font tombol lebih kecil untuk layar kecil */
+        padding: 8px 16px; /* Padding tombol lebih kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Ukuran font lebih kecil untuk layar sangat kecil */
+    }
+    h2 {
+        font-size: 1.2em; /* Ukuran font lebih kecil untuk layar sangat kecil */
+    }
+    p {
+        font-size: 0.9em; /* Ukuran font lebih kecil untuk layar sangat kecil */
+    }
+    button {
+        font-size: 0.9em; /* Ukuran font tombol lebih kecil untuk layar sangat kecil */
+        padding: 6px 12px; /* Padding tombol lebih kecil */
+    }
+}

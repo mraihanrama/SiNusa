@@ -3,40 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dunia Tari Tradisional</title>
-    <link rel="stylesheet" href="style.css">
+    <title>SiNusa - Tari Daerah</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style-tari.css">
+    <link rel="stylesheet" href="style-musik.css" type="text/css"/>
+
 </head>
 <body>
     <header>
-        <h1>Selamat Datang di Dunia Tari Tradisional</h1>
-        <p>Pilih provinsi di peta untuk menjelajahi tarian tradisional dari seluruh Indonesia.</p>
+        <h1 class="text-center">Selamat Datang di Dunia Tari Daerah</h1>
     </header>
-    
-    <main>
-        <!-- Tombol Kembali ke Halaman Utama -->
-        <button onclick="goBack()" class="back-button">Kembali</button>
-
-        <!-- Bagian Peta Interaktif -->
+   <main>
         <section id="peta-interaktif">
-            <h2>Peta Indonesia</h2>
+            <h2 class="text-center">Pilih Daerah</h2>
             <div class="peta">
-                <!-- Embed SVG peta interaktif Indonesia -->
-                <object type="image/svg+xml" data="indonesia.svg" id="indonesia-map" onclick="selectRegion(event)">
-                    Peta interaktif tidak dapat ditampilkan.
-                </object>
+                <!-- Peta Indonesia SVG -->
+                <object id="indonesia-map" data="indonesia.svg" type="image/svg+xml"></object>
             </div>
         </section>
         
-        <!-- Bagian Detail Tarian -->
-        <section id="details" style="display: none;">
-            <h2 id="provinsi-title">Detail Tarian Tradisional</h2>
-            <p id="description">Pilih provinsi di peta untuk melihat informasi tarian tradisional dari daerah tersebut.</p>
-            <img id="tari-image" src="" alt="Tarian Tradisional" style="display:none;">
-            <button id="play-sound" onclick="playSound()" style="display:none;">Putar Musik Tari</button>
-            <button id="stop-sound" onclick="stopSound()" style="display:none;">Stop Musik</button>
+        <section id="details">
+            <h2 id="daerah-title">Detail Tari Daerah</h2>
+            <div class="text-box">
+                <p id="description">Pilih wilayah di atas untuk melihat tarian khas daerah tersebut.</p>
+            <img id="tarian-image" src="" alt="Tarian Daerah" style="display:none; max-width: 100%;">
+            <button id="play-video" onclick="playVideo()" style="display:none;">Lihat Tarian</button>
+             <video id="tarian-video" controls style="display: none;"></video>
+            <button id="stop-video" onclick="stopVideo()" style="display:none;">Hentikan</button>
+            <button id="back-button" onclick="goBack()">Kembali</button>
+            </div>
         </section>
+       
     </main>
-
-    <script src="script.js"></script>
+    <script src="script-tari.js"></script>
 </body>
 </html>

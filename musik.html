@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SiNusa - Alat Musik</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-musik.css">
 </head>
 <body>
     <header>
@@ -16,19 +16,22 @@
             <h2 class="text-center">Pilih Daerah</h2>
             <div class="peta">
                 <!-- Peta Indonesia SVG -->
-                <object id="indonesia-map" data="preset/indonesia.svg" type="image/svg+xml"></object>
+                <object id="indonesia-map" data="indonesia.svg" type="image/svg+xml"></object>
             </div>
         </section>
         
         <section id="details">
             <h2 id="daerah-title">Detail Alat Musik Daerah</h2>
-            <p id="description">Pilih wilayah di atas untuk melihat alat musik daerah tersebut.</p>
+            <div class="text-box">
+                <p id="description">Pilih wilayah di atas untuk melihat alat musik daerah tersebut.</p>
             <img id="alat-musik-image" src="" alt="Alat Musik" style="display:none; max-width: 100%;">
             <button id="play-sound" onclick="playSound()" style="display:none;">Putar Suara</button>
             <button id="stop-sound" onclick="stopSound()" style="display:none;">Hentikan</button>
+            <button id="back-button" onclick="goBack()">Kembali</button>
+            </div>
         </section>
-       <button id="back-button" onclick="goBack()">Kembali</button>
+       
     </main>
-    <script src="script.js"></script>
+    <script src="script-musik.js"></script>
 </body>
 </html>
