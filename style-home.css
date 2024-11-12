@@ -32,7 +32,7 @@ p {
 }
 
 .option {
-    width: 250px;
+    width: 500px;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
@@ -48,8 +48,8 @@ p {
 }
 
 .option img {
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 200px;
     margin-bottom: 15px;
 }
 
