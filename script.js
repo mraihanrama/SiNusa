@@ -41,8 +41,8 @@ const backButton = document.getElementById("back-button");
             "ID-JA": {
                 title: "Jambi",
                 description: "Alat musik Gambus adalah khas Jambi. Tari tradisionalnya adalah Tari Piring.",
-                image: "images/gambus-jambi.png",
-                sound: "sounds/gambus-jambi.mp3"
+                image: "preset/images/gambus-jambi.png",
+                sound: "preset/sounds/gambus-jambi.mp3"
             },
             "ID-JB": {
                 title: "Jawa Barat",
@@ -53,32 +53,32 @@ const backButton = document.getElementById("back-button");
             "ID-JI": {
                 title: "Jawa Timur",
                 description: "Keroncong adalah alat musik khas Jawa Timur. Tari tradisionalnya adalah Tari Remo.",
-                image: "images/keroncong-jawa-timur.png",
-                sound: "sounds/keroncong-jawa-timur.mp3"
+                image: "preset/images/keroncong-jawa-timur.png",
+                sound: "preset/sounds/keroncong-jawa-timur.mp3"
             },
             "ID-JK": {
                 title: "Jakarta",
                 description: "Betawi memiliki alat musik Ondel-Ondel. Tari tradisionalnya adalah Tari Topeng Betawi.",
-                image: "images/ondel-ondel-jakarta.png",
-                sound: "sounds/ondel-ondel-jakarta.mp3"
+                image: "preset/images/ondel-ondel-jakarta.png",
+                sound: "preset/sounds/ondel-ondel-jakarta.mp3"
             },
             "ID-JT": {
                 title: "Jawa Tengah",
                 description: "Gamelan adalah alat musik khas Jawa Tengah. Tari tradisionalnya adalah Tari Gambyong.",
-                image: "images/gamelan-jawa-tengah.png",
-                sound: "sounds/gamelan-jawa-tengah.mp3"
+                image: "preset/images/gamelan-jawa-tengah.png",
+                sound: "preset/sounds/gamelan-jawa-tengah.mp3"
             },
             "ID-KB": {
                 title: "Kalimantan Barat",
                 description: "Alat musik Sape adalah khas Kalimantan Barat. Tari tradisionalnya adalah Tari Dayak.",
-                image: "images/sape-kalimantan-barat.png",
-                sound: "sounds/sape-kalimantan-barat.mp3"
+                image: "preset/images/sape-kalimantan-barat.png",
+                sound: "preset/sounds/sape-kalimantan-barat.mp3"
             },
             "ID-KI": {
                 title: "Kalimantan Timur",
                 description: "Alat musik Kecapi adalah khas Kalimantan Timur. Tari tradisionalnya adalah Tari Perang.",
-                image: "images/kecapi-kalimantan-timur.png",
-                sound: "sounds/kecapi-kalimantan-timur.mp3"
+                image: "preset/images/kecapi-kalimantan-timur.png",
+                sound: "preset/sounds/kecapi-kalimantan-timur.mp3"
             }
             // Tambahkan data untuk provinsi lain sesuai ID-nya
         };
