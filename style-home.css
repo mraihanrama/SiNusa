@@ -1,87 +1,78 @@
-/* CSS Style */
-body {
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    margin: 0;
-    background: linear-gradient(to bottom, #84fab0, #8fd3f4);
+    height: 100vh;
+    background-color: #f3f4f6;
 }
 
-header {
-    text-align: center;
-    padding: 20px;
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-h1 {
-    color: #FF6F61;
-    font-size: 3em;
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-p {
-    font-size: 1.3em;
-    color: #333;
-}
-
-.option-container {
-    display: flex;
-    gap: 40px;
-    margin-top: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.option {
-    width: 350px;
-    padding: 20px;
-    background-color: #FFF;
+/* Card Styling */
+.card {
+    width: 300px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: white;
     text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Header Section with Gradient */
+.card-header {
+    background: linear-gradient(45deg, #FFB74D, #FF5722); /* Adjust colors as needed */
+    padding: 20px;
     position: relative;
 }
 
-.option:hover {
-    transform: scale(1.1) rotate(-2deg);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+.icon {
+    font-size: 2.5em; /* Icon size */
+    color: white;
 }
 
-.option img {
-    width: 200px;
-    height: 180px;
-    margin-bottom: 15px;
-    transition: transform 0.3s;
-    border-radius: 15px;
+/* Body Content */
+.card-body {
+    padding: 20px;
 }
 
-.option:hover img {
-    transform: scale(1.1);
-}
-
-.option h2 {
-    font-size: 1.8em;
-    color: #FF6F61;
+.card-body h2 {
+    font-size: 1.5em;
+    color: #333;
     margin-bottom: 10px;
 }
 
-.option p {
-    color: #555;
-    font-size: 1.1em;
+.card-body p {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.4;
 }
 
-.interactive-image {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
-    border-radius: 10px;
+/* Footer Section with Buttons */
+.card-footer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+.jelajahi {
+    background: linear-gradient(45deg, #FFA726, #FF7043);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.jelajahi:hover {
+    background: linear-gradient(45deg, #FF7043, #FFA726);
 }
