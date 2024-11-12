@@ -1,1 +1,145 @@
+"ID-AC": {
+    "title": "Aceh",
+    "description": "Serune Kalee adalah alat musik khas Aceh. Tari tradisionalnya antara lain Tari Saman.",
+    "image": "preset/images/serunekalee.jpg",
+    "sound": "preset/sounds/serunekalee.mp3"
+},
+"ID-BA": {
+    "title": "Bali",
+    "description": "Gamelan Bali adalah alat musik khas Bali. Tari tradisionalnya antara lain Tari Kecak.",
+    "image": "preset/images/gamelanbali.jpg",
+    "sound": "preset/sounds/gamelanbali.mp3"
+},
+"ID-BB": {
+    "title": "Bangka Belitung",
+    "description": "Dambus adalah alat musik khas Bangka Belitung. Tari tradisionalnya antara lain Tari Campak.",
+    "image": "preset/images/dambus.jpg",
+    "sound": "preset/sounds/dambus.mp3"
+},
+"ID-BE": {
+    "title": "Bengkulu",
+    "description": "Dol adalah alat musik khas Bengkulu. Tari tradisionalnya antara lain Tari Andun.",
+    "image": "preset/images/dol.jpg",
+    "sound": "preset/sounds/dol.mp3"
+},
+"ID-BT": {
+    "title": "Banten",
+    "description": "Angklung Buhun adalah alat musik khas Banten. Tari tradisionalnya antara lain Tari Rampak Bedug.",
+    "image": "preset/images/angklungbuhun.jpg",
+    "sound": "preset/sounds/angklungbuhun.mp3"
+},
+"ID-GO": {
+    "title": "Gorontalo",
+    "description": "Gambus adalah alat musik khas Gorontalo. Tari tradisionalnya antara lain Tari Saronde.",
+    "image": "preset/images/gambus.jpg",
+    "sound": "preset/sounds/gambus.mp3"
+},
+"ID-JA": {
+    "title": "Jambi",
+    "description": "Gambus Jambi adalah alat musik khas Jambi. Tari tradisionalnya antara lain Tari Sekapur Sirih.",
+    "image": "preset/images/gambusjambi.jpg",
+    "sound": "preset/sounds/gambusjambi.mp3"
+},
+"ID-JB": {
+    "title": "Jawa Barat",
+    "description": "Angklung adalah alat musik khas Jawa Barat. Tari tradisionalnya antara lain Tari Jaipong.",
+    "image": "preset/images/angklung.jpg",
+    "sound": "preset/sounds/angklung.mp3"
+},
+"ID-JT": {
+    "title": "Jawa Tengah",
+    "description": "Gamelan Jawa adalah alat musik khas Jawa Tengah. Tari tradisionalnya antara lain Tari Gambyong.",
+    "image": "preset/images/gamelanjawa.jpg",
+    "sound": "preset/sounds/gamelanjawa.mp3"
+},
+"ID-JI": {
+    "title": "Jawa Timur",
+    "description": "Gamelan Jawa Timur adalah alat musik khas Jawa Timur. Tari tradisionalnya antara lain Tari Remo.",
+    "image": "preset/images/gamelanjawatimur.jpg",
+    "sound": "preset/sounds/gamelanjawatimur.mp3"
+},
+"ID-KB": {
+    "title": "Kalimantan Barat",
+    "description": "Tuma adalah alat musik khas Kalimantan Barat. Tari tradisionalnya antara lain Tari Monong.",
+    "image": "preset/images/tuma.jpg",
+    "sound": "preset/sounds/tuma.mp3"
+},
+"ID-KI": {
+    "title": "Kalimantan Timur",
+    "description": "Sampek adalah alat musik khas Kalimantan Timur. Tari tradisionalnya antara lain Tari Gantar.",
+    "image": "preset/images/sampek.jpg",
+    "sound": "preset/sounds/sampek.mp3"
+},
+"ID-KR": {
+    "title": "Kepulauan Riau",
+    "description": "Gambus adalah alat musik khas Kepulauan Riau. Tari tradisionalnya antara lain Tari Joged Dangkong.",
+    "image": "preset/images/gambus.jpg",
+    "sound": "preset/sounds/gambus.mp3"
+},
+"ID-MA": {
+    "title": "Maluku",
+    "description": "Totobuang adalah alat musik khas Maluku. Tari tradisionalnya antara lain Tari Cakalele.",
+    "image": "preset/images/totobuang.jpg",
+    "sound": "preset/sounds/totobuang.mp3"
+},
+"ID-MU": {
+    "title": "Maluku Utara",
+    "description": "Foy Doa adalah alat musik khas Maluku Utara. Tari tradisionalnya antara lain Tari Lalayon.",
+    "image": "preset/images/foydoa.jpg",
+    "sound": "preset/sounds/foydoa.mp3"
+},
+"ID-PA": {
+    "title": "Papua",
+    "description": "Tifa adalah alat musik khas Papua. Tari tradisionalnya antara lain Tari Yospan.",
+    "image": "preset/images/tifa.jpg",
+    "sound": "preset/sounds/tifa.mp3"
+},
+"ID-PB": {
+    "title": "Papua Barat",
+    "description": "Fu adalah alat musik khas Papua Barat. Tari tradisionalnya antara lain Tari Sajojo.",
+    "image": "preset/images/fu.jpg",
+    "sound": "preset/sounds/fu.mp3"
+},
+"ID-RI": {
+    "title": "Riau",
+    "description": "Gambus adalah alat musik khas Riau. Tari tradisionalnya antara lain Tari Zapin.",
+    "image": "preset/images/gambus.jpg",
+    "sound": "preset/sounds/gambus.mp3"
+},
+"ID-SB": {
+    "title": "Sumatera Barat",
+    "description": "Saluang adalah alat musik khas Sumatera Barat. Tari tradisionalnya antara lain Tari Piring.",
+    "image": "preset/images/saluang.jpg",
+    "sound": "preset/sounds/saluang.mp3"
+},
+"ID-SN": {
+    "title": "Sulawesi Selatan",
+    "description": "Keso-keso adalah alat musik khas Sulawesi Selatan. Tari tradisionalnya antara lain Tari Pakarena.",
+    "image": "preset/images/keso-keso.jpg",
+    "sound": "preset/sounds/keso-keso.mp3"
+},
+"ID-ST": {
+    "title": "Sulawesi Tengah",
+    "description": "Ganda adalah alat musik khas Sulawesi Tengah. Tari tradisionalnya antara lain Tari Dero.",
+    "image": "preset/images/ganda.jpg",
+    "sound": "preset/sounds/ganda.mp3"
+},
+"ID-SG": {
+    "title": "Sulawesi Tenggara",
+    "description": "Gambus adalah alat musik khas Sulawesi Tenggara. Tari tradisionalnya antara lain Tari Lulo.",
+    "image": "preset/images/gambus.jpg",
+    "sound": "preset/sounds/gambus.mp3"
+},
+"ID-SR": {
+    "title": "Sulawesi Barat",
+    "description": "Gendang adalah alat musik khas Sulawesi Barat. Tari tradisionalnya antara lain Tari Patuddu.",
+    "image": "preset/images/gendang.jpg",
+    "sound": "preset/sounds/gendang.mp3"
+},
+"ID-SU": {
+    "title": "Sumatera Utara",
+    "description": "Gondang Batak adalah alat musik khas Sumatera Utara. Tari tradisionalnya antara lain Tari Tor-Tor.",
+    "image": "preset/images/gondangbatak.jpg",
+    "sound": "preset/sounds/gondangbatak.mp3"
+}
 
