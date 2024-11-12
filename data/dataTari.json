@@ -1,0 +1,122 @@
+{
+    "ID-AC": {
+        "title": "Aceh",
+        "description": "Tari Saman.",
+        "video": "preset/videos/tari-saman.mp4"
+    },
+    "ID-BA": {
+        "title": "Bali",
+        "description": "Tari Kecak.",
+        "video": "preset/videos/tari-kecak.mp4"
+    },
+    "ID-BB": {
+        "title": "Bangka Belitung",
+        "description": "Tari Campak.",
+        "video": "preset/videos/tari-campak.mp4"
+    },
+    "ID-BE": {
+        "title": "Bengkulu",
+        "description": "Tari Andun.",
+        "video": "preset/videos/tari-andun.mp4"
+    },
+    "ID-BT": {
+        "title": "Banten",
+        "description": "Tari Rampak Bedug.",
+        "video": "preset/videos/tari-rampak-bedug.mp4"
+    },
+    "ID-GO": {
+        "title": "Gorontalo",
+        "description": "Tari Saronde.",
+        "video": "preset/videos/tari-saronde.mp4"
+    },
+    "ID-JA": {
+        "title": "Jambi",
+        "description": "Tari Sekapur Sirih.",
+        "video": "preset/videos/tari-sekapur-sirih.mp4"
+    },
+    "ID-JB": {
+        "title": "Jawa Barat",
+        "description": "Tari Jaipong.",
+        "video": "preset/videos/tari-jaipong.mp4"
+    },
+    "ID-JT": {
+        "title": "Jawa Tengah",
+        "description": "Tari Gambyong.",
+        "video": "preset/videos/tari-gambyong.mp4"
+    },
+    "ID-JI": {
+        "title": "Jawa Timur",
+        "description": "Tari Remo.",
+        "video": "preset/videos/tari-remo.mp4"
+    },
+    "ID-KB": {
+        "title": "Kalimantan Barat",
+        "description": "Tari Monong.",
+        "video": "preset/videos/tari-monong.mp4"
+    },
+    "ID-KI": {
+        "title": "Kalimantan Timur",
+        "description": "Tari Gantar.",
+        "video": "preset/videos/tari-gantar.mp4"
+    },
+    "ID-KR": {
+        "title": "Kepulauan Riau",
+        "description": "Tari Joged Dangkong.",
+        "video": "preset/videos/tari-joged-dangkong.mp4"
+    },
+    "ID-MA": {
+        "title": "Maluku",
+        "description": "Tari Cakalele.",
+        "video": "preset/videos/tari-cakalele.mp4"
+    },
+    "ID-MU": {
+        "title": "Maluku Utara",
+        "description": "Tari Lalayon.",
+        "video": "preset/videos/tari-lalayon.mp4"
+    },
+    "ID-PA": {
+        "title": "Papua",
+        "description": "Tari Yospan.",
+        "video": "preset/videos/tari-yospan.mp4"
+    },
+    "ID-PB": {
+        "title": "Papua Barat",
+        "description": "Tari Sajojo.",
+        "video": "preset/videos/tari-sajojo.mp4"
+    },
+    "ID-RI": {
+        "title": "Riau",
+        "description": "Tari Zapin.",
+        "video": "preset/videos/tari-zapin.mp4"
+    },
+    "ID-SB": {
+        "title": "Sumatera Barat",
+        "description": "Tari Piring.",
+        "video": "preset/videos/tari-piring.mp4"
+    },
+    "ID-SN": {
+        "title": "Sulawesi Selatan",
+        "description": "Tari Pakarena.",
+        "video": "preset/videos/tari-pakarena.mp4"
+    },
+    "ID-ST": {
+        "title": "Sulawesi Tengah",
+        "description": "Tari Dero.",
+        "video": "preset/videos/tari-dero.mp4"
+    },
+    "ID-SG": {
+        "title": "Sulawesi Tenggara",
+        "description": "Tari Lulo.",
+        "video": "preset/videos/tari-lulo.mp4"
+    },
+    "ID-SR": {
+        "title": "Sulawesi Barat",
+        "description": "Tari Patuddu.",
+        "video": "preset/videos/tari-patuddu.mp4"
+    },
+    "ID-SU": {
+        "title": "Sumatera Utara",
+        "description": "Tari Tor-Tor.",
+        "video": "preset/videos/tari-tor-tor.mp4"
+    }
+}

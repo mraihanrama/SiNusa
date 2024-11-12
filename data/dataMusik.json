@@ -1,1 +1,146 @@
-
+{
+    "ID-AC": {
+        "title": "Aceh",
+        "description": "Serune Kalee adalah alat musik khas Aceh.",
+        "image": "preset/images/serunai.jpg",
+        "sound": "preset/sounds/serunai.mp3"
+    },
+    "ID-BA": {
+        "title": "Bali",
+        "description": "Gamelan Bali adalah alat musik khas Bali.",
+        "image": "preset/images/gamelan-bali.png",
+        "sound": "preset/sounds/gamelan-bali.mp3"
+    },
+    "ID-BB": {
+        "title": "Bangka Belitung",
+        "description": "Dambus adalah alat musik khas Bangka Belitung.",
+        "image": "preset/images/dambus.jpg",
+        "sound": "preset/sounds/dambus.mp3"
+    },
+    "ID-BE": {
+        "title": "Bengkulu",
+        "description": "Dol adalah alat musik khas Bengkulu.",
+        "image": "preset/images/dol.png",
+        "sound": "preset/sounds/dol.mp3"
+    },
+    "ID-BT": {
+        "title": "Banten",
+        "description": "Tanjidor adalah alat musik khas Banten.",
+        "image": "preset/images/tanjidor.png",
+        "sound": "preset/sounds/tanjidor.mp3"
+    },
+    "ID-GO": {
+        "title": "Gorontalo",
+        "description": "Polopalo adalah alat musik khas Gorontalo.",
+        "image": "preset/images/polopalo.png",
+        "sound": "preset/sounds/polopalo.mp3"
+    },
+    "ID-JA": {
+        "title": "Jambi",
+        "description": "Gambus Jambi adalah alat musik khas Jambi.",
+        "image": "preset/images/gambusjambi.jpg",
+        "sound": "preset/sounds/gambusjambi.mp3"
+    },
+    "ID-JB": {
+        "title": "Jawa Barat",
+        "description": "Angklung adalah alat musik khas Jawa Barat.",
+        "image": "preset/images/angklung.png",
+        "sound": "preset/sounds/angklung.mp3"
+    },
+    "ID-JT": {
+        "title": "Jawa Tengah",
+        "description": "Gamelan Jawa adalah alat musik khas Jawa Tengah.",
+        "image": "preset/images/gamelanjawa.jpg",
+        "sound": "preset/sounds/gamelanjawa.mp3"
+    },
+    "ID-JI": {
+        "title": "Jawa Timur",
+        "description": "Gamelan Jawa Timur adalah alat musik khas Jawa Timur.",
+        "image": "preset/images/gamelanjawatimur.jpg",
+        "sound": "preset/sounds/gamelanjawatimur.mp3"
+    },
+    "ID-KB": {
+        "title": "Kalimantan Barat",
+        "description": "Tuma adalah alat musik khas Kalimantan Barat.",
+        "image": "preset/images/tuma.jpg",
+        "sound": "preset/sounds/tuma.mp3"
+    },
+    "ID-KI": {
+        "title": "Kalimantan Timur",
+        "description": "Sampek adalah alat musik khas Kalimantan Timur.",
+        "image": "preset/images/sampek.jpg",
+        "sound": "preset/sounds/sampek.mp3"
+    },
+    "ID-KR": {
+        "title": "Kepulauan Riau",
+        "description": "Gambus adalah alat musik khas Kepulauan Riau.",
+        "image": "preset/images/gambus.jpg",
+        "sound": "preset/sounds/gambus.mp3"
+    },
+    "ID-MA": {
+        "title": "Maluku",
+        "description": "Totobuang adalah alat musik khas Maluku.",
+        "image": "preset/images/totobuang.jpg",
+        "sound": "preset/sounds/totobuang.mp3"
+    },
+    "ID-MU": {
+        "title": "Maluku Utara",
+        "description": "Foy Doa adalah alat musik khas Maluku Utara.",
+        "image": "preset/images/foydoa.jpg",
+        "sound": "preset/sounds/foydoa.mp3"
+    },
+    "ID-PA": {
+        "title": "Papua",
+        "description": "Tifa adalah alat musik khas Papua.",
+        "image": "preset/images/tifa.jpg",
+        "sound": "preset/sounds/tifa.mp3"
+    },
+    "ID-PB": {
+        "title": " Papua Barat",
+        "description": "Fu adalah alat musik khas Papua Barat.",
+        "image": "preset/images/fu.jpg",
+        "sound": "preset/sounds/fu.mp3"
+    },
+    "ID-RI": {
+        "title": "Riau",
+        "description": "Gambus adalah alat musik khas Riau.",
+        "image": "preset/images/gambus.jpg",
+        "sound": "preset/sounds/gambus.mp3"
+    },
+    "ID-SB": {
+        "title": "Sumatera Barat",
+        "description": "Saluang adalah alat musik khas Sumatera Barat.",
+        "image": "preset/images/saluang.jpg",
+        "sound": "preset/sounds/saluang.mp3"
+    },
+    "ID-SN": {
+        "title": "Sulawesi Selatan",
+        "description": "Keso-keso adalah alat musik khas Sulawesi Selatan.",
+        "image": "preset/images/keso-keso.jpg",
+        "sound": "preset/sounds/keso-keso.mp3"
+    },
+    "ID-ST": {
+        "title": "Sulawesi Tengah",
+        "description": "Ganda adalah alat musik khas Sulawesi Tengah.",
+        "image": "preset/images/ganda.jpg",
+        "sound": "preset/sounds/ganda.mp3"
+    },
+    "ID-SG": {
+        "title": "Sulawesi Tenggara",
+        "description": "Gambus adalah alat musik khas Sulawesi Tenggara.",
+        "image": "preset/images/gambus.jpg",
+        "sound": "preset/sounds/gambus.mp3"
+    },
+    "ID-SR": {
+        "title": "Sulawesi Barat",
+        "description": "Gendang adalah alat musik khas Sulawesi Barat.",
+        "image": "preset/images/gendang.jpg",
+        "sound": "preset/sounds/gendang.mp3"
+    },
+    "ID-SU": {
+        "title": "Sumatera Utara",
+        "description": "Gondang Batak adalah alat musik khas Sumatera Utara.",
+        "image": "preset/images/gondangbatak.jpg",
+        "sound": "preset/sounds/gondangbatak.mp3"
+    }
+}
