@@ -2,38 +2,38 @@
 "ID-AC": {
     "title": "Aceh",
     "description": "Serune Kalee adalah alat musik khas Aceh. Tari tradisionalnya antara lain Tari Saman.",
-    "image": "preset/images/serunekalee.jpg",
-    "sound": "preset/sounds/serunekalee.mp3"
+    "image": "preset/images/serunai.jpg",
+    "sound": "preset/sounds/serunai.mp3"
 },
 "ID-BA": {
     "title": "Bali",
     "description": "Gamelan Bali adalah alat musik khas Bali. Tari tradisionalnya antara lain Tari Kecak.",
-    "image": "preset/images/gamelanbali.jpg",
-    "sound": "preset/sounds/gamelanbali.mp3"
+    "image": "preset/images/gamelan-bali.jpg",
+    "sound": "preset/sounds/gamelan-bali.mp3"
 },
 "ID-BB": {
     "title": "Bangka Belitung",
     "description": "Dambus adalah alat musik khas Bangka Belitung. Tari tradisionalnya antara lain Tari Campak.",
-    "image": "preset/images/dambus.jpg",
+    "image": "preset/images/dambus.png",
     "sound": "preset/sounds/dambus.mp3"
 },
 "ID-BE": {
     "title": "Bengkulu",
     "description": "Dol adalah alat musik khas Bengkulu. Tari tradisionalnya antara lain Tari Andun.",
-    "image": "preset/images/dol.jpg",
+    "image": "preset/images/dol.png",
     "sound": "preset/sounds/dol.mp3"
 },
 "ID-BT": {
     "title": "Banten",
-    "description": "Angklung Buhun adalah alat musik khas Banten. Tari tradisionalnya antara lain Tari Rampak Bedug.",
-    "image": "preset/images/angklungbuhun.jpg",
-    "sound": "preset/sounds/angklungbuhun.mp3"
+    "description": "Tanjidor adalah alat musik khas Banten. Tari tradisionalnya antara lain Tari Rampak Bedug.",
+    "image": "preset/images/tanjidor.jpg",
+    "sound": "preset/sounds/tanjidor.mp3"
 },
 "ID-GO": {
     "title": "Gorontalo",
-    "description": "Gambus adalah alat musik khas Gorontalo. Tari tradisionalnya antara lain Tari Saronde.",
-    "image": "preset/images/gambus.jpg",
-    "sound": "preset/sounds/gambus.mp3"
+    "description": "Polopalo adalah alat musik khas Gorontalo. Tari tradisionalnya antara lain Tari Saronde.",
+    "image": "preset/images/polopalo.png",
+    "sound": "preset/sounds/polopalo.mp3"
 },
 "ID-JA": {
     "title": "Jambi",
@@ -44,7 +44,7 @@
 "ID-JB": {
     "title": "Jawa Barat",
     "description": "Angklung adalah alat musik khas Jawa Barat. Tari tradisionalnya antara lain Tari Jaipong.",
-    "image": "preset/images/angklung.jpg",
+    "image": "preset/images/angklung.png",
     "sound": "preset/sounds/angklung.mp3"
 },
 "ID-JT": {
