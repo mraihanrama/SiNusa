@@ -108,27 +108,57 @@ header {
 
 /* Responsive Media Queries */
 @media (max-width: 768px) {
+    .option-container {
+         position: fixed; /* Mengatur posisi tetap */
+    right: 300px; /* Jarak dari sisi kanan */
+    top: 300px; /* Jarak dari atas, di bawah header dan ikon-deskripsi */
+    display: flex;
+    gap: 50px; /* Jarak antar opsi */
+    }
     .option {
-        width: 200px;
-        height: 160px;
+        width: 50px;
+        height: 100px;
     }
     .text-box h2 {
-        font-size:  1.2em; /* Adjusted for smaller screens */
+        font-size:  1.0em; /* Adjusted for smaller screens */
     }
     .text-box p {
-        font-size: 1em;
+        font-size: 0.8em;
+    }
+    .explore-button {
+        width: 40px;
+        height: 10px;
+    }
+    .icon {
+        width: 50px;
+        height: 50px;
     }
 }
 
 @media (max-width: 480px) {
+    .option-container {
+         position: fixed; /* Mengatur posisi tetap */
+    right: 300px; /* Jarak dari sisi kanan */
+    top: 300px; /* Jarak dari atas, di bawah header dan ikon-deskripsi */
+    display: flex;
+    gap: 50px; /* Jarak antar opsi */
+    }
     .option {
-        width: 150px;
-        height: 120px;
+        width: 50px;
+        height: 75px;
     }
     .text-box h2 {
-        font-size: 1em; /* Adjusted for smaller screens */
+        font-size: 0.8em; /* Adjusted for smaller screens */
     }
     .text-box p {
-        font-size: 0.9em;
+        font-size: 0.5em;
+    }
+     .explore-button {
+        width: 40px;
+        height: 10px;
+    }
+    .icon {
+        width: 50px;
+        height: 50px;
     }
 }
