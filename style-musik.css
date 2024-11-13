@@ -32,6 +32,17 @@ p {
     color: #ff5722; /* Warna oranye gelap */
     text-align: center;
 }
+.icon-description {
+    display: flex;
+    align-items: center; /* Vertikal center */
+    margin: 0px 0 0 50px; /* Jarak dari atas dan sisi kiri */
+}
+
+.icon {
+    width: 250px; /* Ukuran ikon */
+    height: 250px; /* Ukuran ikon */
+    margin-right: 10px; /* Jarak antara ikon dan deskripsi */
+}
 
 /* Container untuk detail alat musik */
 #details {
